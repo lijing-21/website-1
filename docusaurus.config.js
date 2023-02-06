@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AREX',
-  tagline: 'Dinosaurs are cool',
+  title: 'Real automated API testing with real data.',
+  tagline: 'AREX is an open-source automation testing tool which allows you to capture the online real data and replay it for testing. It provides rich testing features like API Testing, API Comparison Testing, Traffic Recording and Replay, etc.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -20,7 +20,12 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'facebook', // Usually your GitHub org/user name.
   projectName: 'docusaurus', // Usually your repo name.
-
+  "customFields": {
+    // @ts-ignore
+    "users": require('./users.json'),
+    // "repoUrl": GITHUB_URL,
+    // "translationRecruitingLink": TRANSLATE_URL,
+  },
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
@@ -52,10 +57,10 @@ const config = {
               'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: [require.resolve("./src/css/_global.css"),require.resolve('./src/css/custom.css')],
         },
       }),
-    ],
+    ]
   ],
 
   themeConfig:
@@ -71,14 +76,13 @@ const config = {
           },
           items: [
             {
-              type: 'doc',
-              docId: 'intro',
+              href: 'https://arextest.github.io/arex-doc/ ',
               position: 'left',
-              label: 'Tutorial',
+              label: 'Doc',
             },
             {to: '/blog', label: 'Blog', position: 'left'},
             {
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/arextest',
               label: 'GitHub',
               position: 'right',
             },
@@ -88,11 +92,11 @@ const config = {
           style: 'dark',
           links: [
             {
-              title: 'Docs',
+              title: 'Learn',
               items: [
                 {
-                  label: 'Tutorial',
-                  to: '/docs/intro',
+                  label: 'Documents',
+                  href: 'https://arextest.github.io/arex-doc/',
                 },
               ],
             },
@@ -100,16 +104,12 @@ const config = {
               title: 'Community',
               items: [
                 {
-                  label: 'Stack Overflow',
-                  href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-                },
-                {
-                  label: 'Discord',
-                  href: 'https://discordapp.com/invite/docusaurus',
+                  label: 'GitHub',
+                  href: 'https://github.com/arextest',
                 },
                 {
                   label: 'Twitter',
-                  href: 'https://twitter.com/docusaurus',
+                  href: 'https://twitter.com/AREX_Test',
                 },
               ],
             },
@@ -117,17 +117,13 @@ const config = {
               title: 'More',
               items: [
                 {
-                  label: 'Blog',
-                  to: '/blog',
-                },
-                {
-                  label: 'GitHub',
-                  href: 'https://github.com/facebook/docusaurus',
+                  label: 'Licenses',
+                  href: 'https://www.apache.org/licenses/',
                 },
               ],
             },
           ],
-          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+          copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Trip.com.`,
         },
         prism: {
           theme: lightCodeTheme,

@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Normal API Testing',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+          Send requests to an API and evaluating the responses to ensure they meet the specified requirements and function as intended,with features like development, execution, verification, and management of test cases.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'API Comparison Testing',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+          Verify the APIs are functioning as intended after a backend system re-architecture or upgrade by sending the same request message to APIs in different environments and comparing the differences in the response messages.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Traffic Recording and Replay',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+          Record the real online traffic with the third-party dependency data, time and local cache type data, etc. mocked. Replay the traffic in testing environment to test the correctness of code logic.
       </>
     ),
   },
