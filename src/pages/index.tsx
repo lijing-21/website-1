@@ -73,7 +73,7 @@ export default function Home(): JSX.Element {
                                         'button button--outline button--secondary button--lg',
                                         styles.getStarted,
                                     )}
-                                    href="https://github.com/arex/website/edit/main/users.json">
+                                    href="https://github.com/arextest/website/edit/main/users.json">
                                     <Translate>Add your company</Translate>
                                 </Link>
                             </div>
