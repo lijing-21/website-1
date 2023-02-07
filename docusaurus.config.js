@@ -75,11 +75,7 @@ const config = {
             src: 'img/logo.png',
           },
           items: [
-            {
-              href: 'https://arextest.github.io/arex-doc/ ',
-              position: 'left',
-              label: 'Doc',
-            },
+            {to: '/docs/intro', label: 'Doc', position: 'left'},
             {to: '/blog', label: 'Blog', position: 'left'},
             {
               href: 'https://github.com/arextest',
