@@ -1,8 +1,8 @@
 ## Creating new requests
 
-You can create a new request by clicking on the dropdown list on the right of the collection to open a new tab.
+You can create a new request by selecting **Add Request** in the dropdown list of the collection to open a new tab.
 
-![new request](../resource/c1.addrequest.png)
+<img src="https://i.328888.xyz/2023/02/09/3T59J.png" alt="New request" width="400" height="" />
 
 After opening the new tab, you can add the details you need for your request.
 
@@ -14,9 +14,9 @@ After opening the new tab, you can add the details you need for your request.
 
 Each request you send requires a URL representing the API endpoint you are working with. The URL will typically be the base location plus path. For example, in the request `https://arextest.github.io/arex-doc`, `https://arextest.github.io/` is the base URL, and `/arex-doc` is the endpoint path.
 
-Enter the URL for the request you want to request in the address bar.
+Enter the URL for the request you want to request into the URL field.
 
-![new tab](../resource/c2.request.png)
+![new tab](../resource/c2.requestURL.png)
 
 ### Selecting request methods
 
@@ -31,13 +31,13 @@ The default method for a new request is set as `GET`，which means retrieving da
 
 You can send query parameters with your requests using the URL field and the **Parameters** tab. **Query parameters** are appended to the end of the request URL, following ? and listed in key value pairs, separated by & using the following syntax: `?id=1&type=new`.
 
-To send a query parameter, you can add it directly to the URL or open **Parameters** tab and click "**+**" to enter the name and value.
+To send a query parameter, you can add it directly to the URL or open **Parameters** tab and select "**+**" to enter the name and value.
 
 ![parameters](../resource/c2.parameters.png)
 
 The ![disable params](../resource/c2.save.png)icon indicates that the parameter is in use, and you can click the icon to disable it.
 
-Click ![re-enable params](../resource/c2.ban.png) icon to re-enable.
+Select ![re-enable params](../resource/c2.ban.png) icon to re-enable.
 
 ![disable params](../resource/c2.ban2.png)
 
@@ -46,6 +46,10 @@ Click ![re-enable params](../resource/c2.ban.png) icon to re-enable.
 Some APIs require specific headers to be included in requests, usually to provide additional information about the operation being performed. These headers can be configured in the **Headers** tab. Simply enter the necessary key-value pairs, and AREX will include them in the request.
 
 ![request headers](../resource/c2.header.png)
+
+You can select the **action.record** icon ![record](../resource/recordicon.png) to force record the request as test cases by sending it. See the details in **Force Record**.
+
+![force record](../resource/c1.force.record.png)
 
 ### Sending body data
 
@@ -100,4 +104,4 @@ Headers are displayed as key-value pairs under the **Headers** tab.
 
 The test results for the API request can be found in the **Result** tab, if any test scripts were run.
 
-![test result](../resource/c2.result.png)
+<img src="https://i.328888.xyz/2023/02/09/3aRio.png" alt="result" width="500" height="" />

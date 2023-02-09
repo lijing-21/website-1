@@ -12,21 +12,21 @@ To create a new collection, select **Collection** > **New** from the sidebar.
 
 Or select the **+** icon to create a new collection：
 
-![新建集合](../resource/c1.newcollection.2.png)
+<img src="https://i.328888.xyz/2023/02/09/3TiPX.png" alt="New Collection" width="400" height="" />
 
 Once created, you can manage all your collections under **Collections** in the sidebar. You can also add new subsets/folders under collections.
 
-![集合操作](../resource/c1.newfolder.png)
+<img src="https://i.328888.xyz/2023/02/09/3TndN.png" alt="New Collection" width="500" height="" />
 
 To customize and configure the new collection, click directly on the collection:
 
 1. Select **Authorization** to configure authorization details for the collection. If you do not want to expose the interface to the public, you can use authorization. The authorization process will verify that you have permission to access the data required by the server, and when you send a request, you usually need to include parameters to ensure that the request has permission to access and return the required data. By default, this will take effect for requests under the entire collection/folder. If you need to modify the authorization type for a particular request, you can do so separately in that request.
 
-![集合授权](../resource/c1.authorization.png)
+    <img src="https://i.328888.xyz/2023/02/09/3T0Eb.png" alt="Authorization" width="600" height="" />
 
 2. Select **Pre-request Script** to define a pre-request script for your collection, which will run before requests are sent to the server.
 
-![集合前置脚本](../resource/c1.prerequest.png)
+    ![集合前置脚本](../resource/c1.prerequest.png)
 
 3. Select **Tests** to define a test script for your collection, which will run after a response is received.
 
@@ -38,11 +38,11 @@ To create a new workspace:
 
 1. Select the **+** icon in the upper right to **Add Workspace**. You can also select other workspaces from the dropdown list.
 
-    ![新建工作区](../resource/c1.newworkspace.png)
+    <img src="https://i.328888.xyz/2023/02/09/3T2pw.png" alt="New workspace" width="400" height="" />
 
 2. Enter a Name for your workspace and click the **√** icon to save。
 
-    ![命名工作区](../resource/c1.saveworkspace.png)
+    <img src="https://i.328888.xyz/2023/02/09/3ThBt.png" alt="Save" width="400" height="" />
 
 3. Once created, you can select the ![编辑](../resource/c1.rename.png) icon in the upper right to **Edit Workspace**, where you can edit the name of the workspace, manage collaborators, and delete the workspace.
 
@@ -50,7 +50,7 @@ To create a new workspace:
 
 You can also invite other users to collaborate in a workspace via email by selecting **Invite** in the upper-right corner. There're **Admin**, **Editor**, and **Viewer** three roles.
 
-![邀请](../resource/c1.invite.png)
+<img src="https://i.328888.xyz/2023/02/09/3Tb4x.png" alt="Invite" width="700" height="" />
 
 ## Sending request
 
@@ -58,7 +58,7 @@ You can use AREX to create and send API requests.
 
 1. Select **+** icon in the workbench to open a new tab.
 
-    ![新建请求](../resource/c1.addrequest.png)
+    ![新建请求](../resource/c1.new.request.png)
 
 2. Enter the request URL.
 

@@ -38,11 +38,11 @@ If you cannot access the Chrome extension, it also can be installed locally by d
 
 3. Installation complete.
 
-    ![插件](../resource/c1.add.extension4.png)
+    <img src="https://i.328888.xyz/2023/02/09/3aFVk.png" alt="安装完成" width="500" height="" />
 
 ## Interface Overview
 
-![界面概览](../resource/c1.overview.jpg)overview of Postman's primary interface areas
+![界面概览](../resource/c1.overview.jpg)
 
 The interface of AREX-UI consists of three primary areas: **Header**, **Sidebar**, and **Workbench**.
 
@@ -58,13 +58,13 @@ The interface of AREX-UI consists of three primary areas: **Header**, **Sidebar*
 
 ### Sidebar
 
-![菜单栏](../resource/c1.sidebar.png)
+<img src="https://i.328888.xyz/2023/02/09/3TMab.png" alt="Sidebar" width="400" height="" />
 
-- ![工作区](../resource/c1.workspace.icon.png)Workspace：Select the dropdown list to switch Workspaces; Select **+** to create a new workspace; Select ![编辑工作区](../resource/c1.rename.png) icon to configure the current workspace；Select ![导入](../resource/c1.import.png) icon to import a local file as a collection in the current workspace.
-- Collection：Groups of saved requests. You can send requests and manage your test cases here.
-- Replay: Execute AREX replay and view the reports.
-- Environment: Create a new environment and configure environment variables.
-- Setting: Set up the recording application.
+- ![工作区](../resource/c1.workspace.icon.png)**Workspace**：Select the dropdown list to switch Workspaces; Select **+** to create a new workspace; Select ![编辑工作区](../resource/c1.rename.png) icon to configure the current workspace；Select ![导入](../resource/c1.import.png) icon to import a local file as a collection in the current workspace.
+- **Collection**：Groups of saved requests. You can send requests and manage your test cases here.
+- **Replay**: Execute AREX replay and view the reports.
+- **Environment**: Create a new environment and configure environment variables.
+- **Setting**: Set up the recording application.
 
 ### Workbench
 
