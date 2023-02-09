@@ -2,41 +2,37 @@
 sidebar_position: 2
 ---
 
+## Multi-instance installation
 
+In the previous [Quick Installation Guide](/docs/chapter1/Quick%20Installation#deploy-arex-agent), we introduced how to install all AREX components including AREX UI, services, database, etc. by using the `docker-compose.yml` file provided by AREX.
 
+If you want to install multiple instances according to your needs, you can use the provided `docker-compose-distribute.yml` file for a simple Out-of-the-box setup. Run the following command:
 
-
-## 多实例安装
-
-在快速安装指南中，我们介绍了如何使用 AREX 提供的 docker-compose.yml 文件直接安装 AREX 包括前端、服务、数据库等所有组件，此种安装方式下，每个组件只有 1 个实例，无法实现多实例负载均衡和扩容。
-
-如要进行多实例安装，可通过 AREX 提供的 docker-compose-distribute.yml 文件进行缺省安装，运行以下命令：
-
-```
+```Powershell
 git clone https://github.com/arextest/deployments.git 
 cd deployments 
 docker-compose -f docker-compose-distribute.yml up -d
 ```
 
 ```
-## 停止命令 
-docker-compose -f docker-compose-distribute.yml down -v 
-## PS命令 
-docker-compose -f docker-compose-distribute.yml ps
+docker-compose -f docker-compose-distribute.yml down -v // Stopping command
+docker-compose -f docker-compose-distribute.yml ps // List running containers and their status
 ```
 
-缺省配置的调度服务和存储服务是 2 个实例，具体组件实例如下：
+The default setup of the scheduling and storage service involves 2 instances, with the following specific components:
 
-| ID   | Instance | Model Name                                                   | Description                                                  |
-| ---- | -------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
-| 1    | 2        | [Schedule Service](https://github.com/arextest/arex-replay-schedule) | A set of schedule APIs that provide replay send and retrieve all responses for comparison. |
-| 2    | 1        | [Replay Report Service](https://github.com/arextest/arex-report) | A set of report APIs that provide difference summaries and show the difference result details after the responses are compared. |
-| 3    | 2        | [Storage Service](https://github.com/arextest/arex-storage)  | A set of remote storage APIs that provide [Agent Hook Service](https://github.com/arextest/arex-agent-java) to save records and get responses as mocks. |
-| 4    | 1        | [Front-End](https://github.com/arextest/arex-front-end)      | A visual web site that provide entry to all operations in your **AREX**. |
-| 5    | 1        | MongoDB                                                      | 数据存储及配置管理数据库                                     |
-| 6    | 1        | Redis                                                        | 高速回放缓存                                                 |
-| 7    | 1        | Nginx                                                        | Schedule 负载均衡服务                                        |
-| 8    | 1        | Nginx                                                        | Storage 负载均衡服务                                         |
+The default configuration of the scheduling service and storage service is 2 instances, with specific component instances as follows:
+
+| ID   | Number of Instance | Model Name                                                   | Description                                                  |
+| ---- | -------------------| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 1    | 2                  | [Schedule Service](https://github.com/arextest/arex-replay-schedule) | A set of schedule APIs that provide replay send and retrieve all responses for comparison. |
+| 2    | 1                  | [Replay Report Service](https://github.com/arextest/arex-report) | A set of report APIs that provide difference summaries and show the difference result details after the responses are compared. |
+| 3    | 2                  | [Storage Service](https://github.com/arextest/arex-storage)  | A set of remote storage APIs that provide [Agent Hook Service](https://github.com/arextest/arex-agent-java) to save records and get responses as mocks. |
+| 4    | 1                  | [Front-End](https://github.com/arextest/arex-front-end)      | A visual web site that provide entry to all operations in your **AREX**. |
+| 5    | 1                  | MongoDB                                                      | 数据存储及配置管理数据库                                      |
+| 6    | 1                  | Redis                                                        | 高速回放缓存                                                 |
+| 7    | 1                  | Nginx                                                        | Schedule 负载均衡服务                                        |
+| 8    | 1                  | Nginx                                                        | Storage 负载均衡服务                                         |
 
 当然你也可以**修改** `docker-compose-distribute.yml` 配置文件，根据自己的需求配置多实例。
 
@@ -146,4 +142,4 @@ environment:
 
 #### **后续操作**
 
-Agent 配置同快速安装指南。
+Agent 配置同[快速安装指南](/docs/chapter1/fastsetup#部署-arex-agent)。

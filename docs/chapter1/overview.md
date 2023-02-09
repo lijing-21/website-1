@@ -1,81 +1,87 @@
-AREX 服务安装完成后，即可通过浏览器（推荐使用 Chrome 浏览器）访问 AREX 前端页面：
+---
+sidebar_position: 3
+---
 
-- 如果未修改端口配置，则直接访问 8088 端口 (Docker Compose 暴露端口 8088) [http://0.0.0.0:8088/](http://10.5.153.1:8088/)
-- 如果独立部署前端，且未修改端口的 (缺省端口 8080) [http://0.0.0.0:8080/](http://10.5.153.1:8080/)
-- 如果端口做了修改，则按照修改后的端口访问
+After installation, you can access the **AREX-UI** via **Chrome** browser:
 
-## 首次登陆
+- If the port configuration has not been modified, access port 8088 directly (port 8088 exposed by Docker Compose) http://0.0.0.0:8088/
+- If the front-end is deployed independently and the port has not been modified (default port 8080) http://0.0.0.0:8080/
+- If the port has been modified, access according to the modified port.
+
+## First Login
 
 ![登录](../resource/c1.log.png)
 
-首次登录需要输入你的个人邮箱，邮箱收到验证码后点击 Login 完成登录。
+For the first login, you need to enter your personal E-mail. After receiving the verification code, select **Login** to complete the login.
 
-也可以直接点击下 **Guest** 链接进行登录，但登录后不具备邀请功能（即用例分享功能）。
+You can also log in as a guest by selecting the **Guest**, but you will have limited access and will not be able to use the invite or case sharing feature.
 
-## Chrome 插件安装
+## Chrome Plugin Installation
 
 ![插件](../resource/c1.chrome.extension.png)
 
-注意：在使用前需要根据浏览器提示安装 Chrome 插件，解除浏览器跨域限制。
+Before using, please install the Chrome plugin according to the browser prompt to remove the browser cross-domain restrictions.
 
-在跳转出的页面中选择 **Add to Chrome** 下载插件即可。
+In the redirected page, select **Add to Chrome** option to download the plugin.
 
 ![插件](../resource/c1.add.extension.png)
 
-如不能访问 Chrome 插件，可通过 [Release](https://github.com/arextest/arex-chrome-extension/releases) 下载到本地安装。
+If you cannot access the Chrome extension, it also can be installed locally by downloading from the [Release](https://github.com/arextest/arex-chrome-extension/releases).
 
-1. 下载 arex-chrome-extension.zip 到本地并解压
+1. Download `arex-chrome-extension.zip` and unzip it.
 
     ![插件](../resource/c1.add.extension2.png)
 
-2. 打开 Chrome 浏览器并输入 `chrome://extensions/` 进入扩展程序页面。点击右上角选择开发者模式。再点击 **加载已解压的扩展程序** 选中刚才解压的文件夹。
+2. Open the Chrome browser and enter `chrome://extensions/` to access the extension page. Click on the upper right corner to select developer mode. Then select the previously extracted folder by selacting **Load unpacked extension**.
 
     ![插件](../resource/c1.add.extension3.png)
 
-3. 安装完成。
+3. Installation complete.
 
     ![插件](../resource/c1.add.extension4.png)
 
-## 界面组成
+## Interface Overview
 
-![界面概览](../resource/c1.overview.jpg)
+![界面概览](../resource/c1.overview.jpg)overview of Postman's primary interface areas
 
-AREX 前端页面主要包含页眉、菜单栏、工作台三大区域。
+The interface of AREX-UI consists of three primary areas: **Header**, **Sidebar**, and **Workbench**.
 
-### 页眉（Header）
+### Header
 
 ![页眉](../resource/c1.header.png)
 
-- Invite：邀请其他人参与某 Workspace 的协同工作。
+- Invite: Invite others to collaborate on the same Workspace.
 
-- ![Settings icon](../resource/c1.setting.icon.png) 设置：切换页面暗黑/明亮模式、中/英文模式。
+- ![Settings icon](../resource/c1.setting.icon.png) Settings: Switch between Dark/Light mode and Chinese/English mode.
 
-- Sign out：你可退出当前登录账号。
+- Sign out：You can sign out of your current account.
 
-### 菜单栏
+### Sidebar
 
 ![菜单栏](../resource/c1.sidebar.png)
 
-- ![工作区](../resource/c1.workspace.icon.png)Workspace：点击下拉菜单切换 Workspace；点击右侧 **+** 新建一个工作区；点击![编辑工作区](../resource/c1.rename.png)图标设置当前工作区；点击![导入](../resource/c1.import.png)图标向当前工作区导入本地文件作为集合。
-- Collection：查看常规测试用例和比对测试用例。
-- Replay：访问 AREX 录制回放用例。
-- Environment：创建新环境并配置环境变量。
-- Setting：设置录制应用。
+- ![工作区](../resource/c1.workspace.icon.png)Workspace：Select the dropdown list to switch Workspaces; Select **+** to create a new workspace; Select ![编辑工作区](../resource/c1.rename.png) icon to configure the current workspace；Select ![导入](../resource/c1.import.png) icon to import a local file as a collection in the current workspace.
+- Collection：Groups of saved requests. You can send requests and manage your test cases here.
+- Replay: Execute AREX replay and view the reports.
+- Environment: Create a new environment and configure environment variables.
+- Setting: Set up the recording application.
 
-### 工作台
+### Workbench
 
-工作台是进行接口测试、回放测试、比对测试等操作时的主要区域。标签栏可以快速管理各种请求、集合、回放，右上角可以快捷选择环境。
+The workbench is the primary area when performing operations such as API testing, replay testing, and comparison testing. The tab bar allows you to quickly manage various requests, collections, and replay, and the top right corner allows you to quickly select the environment.
 
 ![工作台](../resource/c1.workbench.png)
 
-#### 标签栏
+#### Tabs
 
-你可以通过点击标签栏上的 **+** 图标新建一个请求。
+Tabs allow you to organize and work between requests.
+
+You can open a new request by selecting **+** in the workbench.
 
 ![新建请求](../resource/c1.newrequest.png)
 
-#### 切换环境
+#### Switching environments
 
-根据需要，可以在页面右上角，快速切换为你所需要的环境。选中相应的环境，即可访问该环境中的变量。
+As needed, you can quickly switch to the environment you need in the upper right corner of the page. Select the appropriate environment to access the variables in that environment.
 
 ![切换环境](../resource/c1.change.environment.png)
