@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 ## Creating new requests
 
 You can create a new request by selecting **Add Request** in the dropdown list of the collection to open a new tab.
@@ -47,7 +51,7 @@ Some APIs require specific headers to be included in requests, usually to provid
 
 ![request headers](../resource/c2.header.png)
 
-You can select the **action.record** icon ![record](../resource/recordicon.png) to force record the request as test cases by sending it. See the details in **Force Record**.
+You can select the **action.record** icon ![record](../resource/recordicon.png) to force record the request as test cases by sending it. See the details in [**Force Record**](/docs/chapter%203/Force%20record).
 
 ![force record](../resource/c1.force.record.png)
 
