@@ -91,8 +91,8 @@ const config = {
               title: 'Learn',
               items: [
                 {
-                  label: 'Documents',
-                  href: 'https://arextest.github.io/arex-doc/',
+                  label: 'Docs',
+                  href: '/docs/intro',
                 },
               ],
             },
