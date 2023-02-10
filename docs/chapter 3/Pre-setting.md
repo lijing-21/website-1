@@ -13,7 +13,7 @@ It is often used for regression testing and has a number of advantages:
 
 ## Record your appication
 
-AREX Agent is the core component for implementing service recording and playback. To use the recording function, the Agent must be deployed in the tested application, see for [Deploy AREX Agent](Quick%20Installation#deploy-arex-agent).
+AREX Agent is the core component for implementing service recording and playback. To use the recording function, the Agent must be deployed in the tested application, see for [Deploy AREX Agent](../chapter1/Quick%20Installation.md#deploy-arex-agent).
 
 Once configured, you can access the AREX UI through Chrome browser, select the **Replay** tab, and then you will see your applications to be tested in the right-side.
 
