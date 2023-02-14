@@ -2,9 +2,9 @@
 sidebar_position: 3
 ---
 
-Mock is to imitate the output of third-party business interfaces for its own testing purposes, facilitating quick completion of testing tasks.
+**Mock** is to replace the dependent objects with mock objects. These mock objects simulate or ‘mock’ the behavior of real objects and exhibit the exact characteristics of the authentic ones, making the testing process faster with mock objects.
 
-With AREX, you can verify the correctness of your system by recording a real online request and replaying it in your test environment. AREX's powerful mocking mechanism will automatically mock all third-party dependencies during the recording process, perfectly reproducing the production data environment and resolving the challenges of constructing data and writing test cases in regression testing.
+With AREX, you can verify the correctness of your system by recording a real online request and replaying it in your test environment. AREX's powerful mock mechanism will automatically mock all third-party dependencies during the recording process, perfectly reproducing the production data environment, resolving the challenges of constructing data and writing test cases in regression testing.
 
 ### Use Cases
 

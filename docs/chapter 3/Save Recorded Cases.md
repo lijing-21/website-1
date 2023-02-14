@@ -1,6 +1,6 @@
 ### Scenarios
 
-1. AREX can record real online traffic to generate rich test cases, which can then be solidified and expanded based on your needs to increase the number of test cases.
+1. AREX can record real online traffic to generate rich test cases, which can then be saved for your needs to increase the number of test cases.
 
 2. Test cases recorded by AREX will be deleted if they exceed the validity period. By saving test cases manually, they can be retained for a longer time and replayed anytime you want.
 
@@ -22,7 +22,7 @@ First, you need to creat a new collection to save the recorded test cases.
 
     ![回放报告](../resource/c3.report2.png)
 
-2. From the replay execution list, select the specific replay task in which you want to save test cases and view the recorded test cases by selecting **Case Table**.
+2. From the replay execution list, select the replay task in which you want to save test cases and view the recorded test cases by selecting **Case Table**.
 
     ![用例](../resource/c3.case.png)
 
@@ -32,15 +32,15 @@ First, you need to creat a new collection to save the recorded test cases.
     
     The validation of the main interface in AREX is mainly based on comparing the differences between the recorded and replayed response messages, while the validation of other external dependencies is validated by comparing their request message. 
     
-    The left side shows the request message of the external dependencies and the response messages of the main interface during the recording process, such as database calls. 
+    The left side shows the request message sent to the external dependencies such as database calls, and the response messages of the main interface during **recording**.
     
-    The right side shows the request content of the dependencies and the response messages of the main interface during the replay process.
+    The right side shows the request message sent to the dependencies and the response messages of the main interface during **replay**.
     
     - ![](../resource/c3.fail.png) icon indicates points of difference, 
     
     - ![](../resource/c2.save.png) icon indicates no point of difference.
 
-3. Select **Save** to save the case to the collection created previously.
+3. Select **Save** to save the case into the collection created previously.
 
     ![保存用例](../resource/c3.savecase.png)
 
@@ -48,7 +48,7 @@ First, you need to creat a new collection to save the recorded test cases.
 
 ## View test cases
 
-Once the test case is saved, you can view it under the corresponding collection request with a similar pattern as an API request.
+Once the test case is saved, you can view it under the corresponding collection request with a similar pattern as a request.
 
 You can categorize your test cases by adding tags. Just place your cursor on **Add Tag** and select the ![](../resource/c1.rename.png) icon. 
 
@@ -64,9 +64,9 @@ The **arex-record-id** in the request **Headers** is the recording ID, if you wa
 
 ![查看用例](../resource/c3.case1.png)
 
-The **Mock** tab shows all data mocked from the production environment and third-party dependencies during the recording process. 
+The **Mock** tab shows all data and third-party dependencies mocked from the production environment during recording. 
 
-The left side shows the main interface and external request messages that were recorded, and the right side shows the corresponding response messages. 
+The left side displays the recorded request messages sent to the main interface and external dependencies, while the right side displays the corresponding response messages.
 
 The mocked data can be edited, so if you are not satisfied with it, you can manually modify it and select "Save" to save it. Then, in next repaly, you can request by using the modified mock data.
 

@@ -16,9 +16,9 @@ After opening the new tab, you can add the details you need for your request.
 
 ### Setting request URLs
 
-Each request you send requires a URL representing the API endpoint you are working with. The URL will typically be the base location plus path. For example, in the request `https://arextest.github.io/arex-doc`, `https://arextest.github.io/` is the base URL, and `/arex-doc` is the endpoint path.
+Each request you send requires a URL representing the API endpoint you are working with. The URL will typically be the base location plus path. For example, in the request `https://arextest.github.io/website`, `https://arextest.github.io` is the base URL, and `/website` is the endpoint path.
 
-Enter the URL for the request you want to request into the URL field.
+Enter the URL for the request into the URL field.
 
 ![new tab](../resource/c2.requestURL.png)
 
