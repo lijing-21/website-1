@@ -53,6 +53,8 @@ AREX provides a very comprehensive Mock feature. Not only basic dependency data 
 - MethodName: The method name to be mocked.
 - ParameterTypes: The full class names of all parameters, separated by "@". Primitive types can be abbreviated, such as int.
 
+**ExcludeServiceOperationSet**: Here are all the interface paths accessed during the recording process. Selecting them to skip these paths during subsequent recording.
+
 ### Replay setting
 
 Select **Replay** tab to enter the replay settings page.
