@@ -34,7 +34,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'en',
-    locales: ['en'],
+    locales: ['en', 'zh-Hans']
   },
 
   presets: [
@@ -78,10 +78,15 @@ const config = {
             {to: '/docs/intro', label: 'Doc', position: 'left'},
             {to: '/blog', label: 'Blog', position: 'left'},
             {
+              type: 'localeDropdown',
+              position: 'right',
+            },
+            {
               href: 'https://github.com/arextest',
               label: 'GitHub',
               position: 'right',
             },
+
           ],
         },
         footer: {

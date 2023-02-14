@@ -1,0 +1,34 @@
+{
+  "link.title.Learn": {
+    "message": "Learn",
+    "description": "The title of the footer links column with title=Learn in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Docs": {
+    "message": "Docs",
+    "description": "The label of footer link with label=Docs linking to /docs/intro"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/arextest"
+  },
+  "link.item.label.Twitter": {
+    "message": "Twitter",
+    "description": "The label of footer link with label=Twitter linking to https://twitter.com/AREX_Test"
+  },
+  "link.item.label.Licenses": {
+    "message": "Licenses",
+    "description": "The label of footer link with label=Licenses linking to https://www.apache.org/licenses/"
+  },
+  "copyright": {
+    "message": "Copyright © 2023 My Project, Inc. Built with Trip.com.",
+    "description": "The footer copyright"
+  }
+}

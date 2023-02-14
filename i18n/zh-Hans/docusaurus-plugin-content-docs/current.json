@@ -1,0 +1,22 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Get Started": {
+    "message": "Get Started",
+    "description": "The label for category Get Started in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Routine Testing": {
+    "message": "Routine Testing",
+    "description": "The label for category Routine Testing in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Traffic Replay": {
+    "message": "Traffic Replay",
+    "description": "The label for category Traffic Replay in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Managing Test Cases": {
+    "message": "Managing Test Cases",
+    "description": "The label for category Managing Test Cases in sidebar tutorialSidebar"
+  }
+}
