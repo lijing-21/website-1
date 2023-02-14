@@ -44,14 +44,34 @@ To create a new workspace:
 
     <img src="https://i.328888.xyz/2023/02/09/3ThBt.png" alt="Save" width="400" height="" />
 
-3. Once created, you can select the ![编辑](../resource/c1.rename.png) icon in the upper right to **Edit Workspace**, where you can edit the name of the workspace, manage collaborators, and delete the workspace.
+## Work with your team
+
+AREX provides collaboration features, where you can invite others to join your workspace and collaborate online within the same workspace. Members who join the workspace can share resources such as environment, test collections and test cases in the **Collection**. To invite members to join a workspace:
+
+1. Switch to the workspace where you want to collaborate with others by selecting the workspace in the top left corner.
+
+    ![切换工作区](../resource/c1.invite1.png)
+
+2. Select **Invite** in the top right corner of the workbench to invite your team members to join the current workspace via email. After entering their email and setting their permissions, select **Send Invites** to send the invitation. The invitee will receive an email invitation, and they can accept it and join the workspace by clicking the link in the email.
+
+    <img src="https://i.328888.xyz/2023/02/09/3Tb4x.png" alt="Invite" width="700" height="" />
+
+    There are three types of permissions: Admin, Editor, and Viewer.
+
+    - **Admin**: has administrative permissions, can manage detailed information in the workspace, delete the workspace, and set permissions for members.
+    - **Editor**: can create and edit resources (such as test cases) in the workspace.
+    - **Viewer**: cannot edit the data in the workspace, but can view and export the resources in the workspace.
+
+3. Select the ![编辑](../resource/c1.rename.png) icon in the upper right to **Edit Workspace**, where you can edit the name of the workspace, manage collaborators, and delete the workspace.
 
     ![编辑工作区](../resource/c1.editworkspace.png)
 
-You can also invite other users to collaborate in a workspace via email by selecting **Invite** in the upper-right corner. There're **Admin**, **Editor**, and **Viewer** three roles.
+    **Overview**: Administrators can modify the name of the workspace, view team members and modify permissions, and delete the workspace on this page. 
 
-<img src="https://i.328888.xyz/2023/02/09/3Tb4x.png" alt="Invite" width="700" height="" />
+    ![管理标签](../resource/c1.addlabel.png)
 
+    **Labels**：Administrators and editors can add test case tags on this page to manage test case.
+    
 ## Sending request
 
 You can use AREX to create and send API requests.
