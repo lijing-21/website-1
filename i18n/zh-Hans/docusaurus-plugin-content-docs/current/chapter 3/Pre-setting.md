@@ -12,7 +12,7 @@ sidebar_position: 1
 
 ## 快速录制应用
 
-AREX Agent 是实现服务录制回放的核心组件，使用录制功能前需要在被测应用中配置 Agent，详见 [部署 AREX Agent](Quick%20Installation#部署-arex-agent)。
+AREX Agent 是实现服务录制回放的核心组件，使用录制功能前需要在被测应用中配置 Agent，详见 [部署 AREX Agent](../chapter1/Quick%20Installation#部署-arex-agent)。
 
 配置完成后，通过浏览器访问 AREX 前端页面，点击 **Replay**，即可在左侧菜单栏中看到已配置好的被测应用。
 
