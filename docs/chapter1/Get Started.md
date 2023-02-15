@@ -2,7 +2,7 @@
 sidebar_position: 4
 ---
 
-## Creating collection
+## Creating Collection
 
 Collections are a group of saved requests. You can save your requests in groups by creating collections, which can help you manage requests better.
 

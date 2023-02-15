@@ -4,8 +4,8 @@ sidebar_position: 3
 
 AREX 服务安装完成后，即可通过浏览器（推荐使用 Chrome 浏览器）访问 AREX 前端页面：
 
-- 如果未修改端口配置，则直接访问 8088 端口 (Docker Compose 暴露端口 8088) [http://0.0.0.0:8088/](http://10.5.153.1:8088/)
-- 如果独立部署前端，且未修改端口的 (缺省端口 8080) [http://0.0.0.0:8080/](http://10.5.153.1:8080/)
+- 如果未修改端口配置，则直接访问 8088 端口 (Docker Compose 暴露端口 8088) http://0.0.0.0:8088/
+- 如果独立部署前端，且未修改端口 (缺省端口 8080),则访问 http://0.0.0.0:8080/
 - 如果端口做了修改，则按照修改后的端口访问
 
 ## 首次登陆
@@ -58,13 +58,16 @@ AREX 前端页面主要包含页眉、菜单栏、工作台三大区域。
 
 ### 菜单栏
 
-<img src="https://i.328888.xyz/2023/02/09/3TMab.png" alt="Sidebar" width="400" height="" />
+<img src="https://i.328888.xyz/2023/02/15/mxrXb.png" alt="Sidebar" width="400" height="" />
 
-- ![工作区](../resource/c1.workspace.icon.png)Workspace：点击下拉菜单切换 Workspace；点击右侧 **+** 新建一个工作区；点击![编辑工作区](../resource/c1.rename.png)图标设置当前工作区；点击![导入](../resource/c1.import.png)图标向当前工作区导入本地文件作为集合。
+- ![工作区](../resource/c1.workspace.icon.png)Workspace：
+    - 点击下拉菜单切换 Workspace；点击右侧 **+** 新建一个工作区；
+    - 点击![编辑工作区](../resource/c1.rename.png)图标设置当前工作区；
+    - 点击![导入](../resource/c1.import.png)图标向当前工作区导入本地文件作为集合。
 - Collection：查看常规测试用例和比对测试用例。
 - Replay：访问 AREX 录制回放用例。
 - Environment：创建新环境并配置环境变量。
-- Setting：设置录制应用。
+- AppSetting：流量录制回放的相关配置。
 
 ### 工作台
 
